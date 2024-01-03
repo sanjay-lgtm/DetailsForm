@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset form="form1">
+      <legend>Personal Details</legend>
+      <label for="firstname">Firstname:</label>
+      <input
+        type="text"
+        minlength="5"
+        maxlength="200"
+        id="firstname"
+        required
+      />
+      <br />
+      <br />
+      <label for="Middlename">Middlename:</label>
+      <input
+        type="text"
+        minlength="5"
+        maxlength="200"
+        id="Middlename"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="Lastname">Lastname:</label>
+      <input type="text" minlength="5" maxlength="200" id="Lastname" required />
+      <br />
+      <br />
+      <label for="course">Course:</label>
+      <select id="course">
+        Courses:
+        <option value="Courses">Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="btech">B.tech</option>
+        <option value="MCA">MCA</option>
+        <option value="MBA">MBA</option>
+        <option value="mtech">M.tech</option>
+      </select>
+      <br />
+      <br />
+      <label for="gender">Gender:</label><br />
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" name="gender" id="other" value="Other" />
+      <label for="other">Other</label><br /><br />
+      <label for="birthday">DOB:</label>
+      <input
+        type="datetime-local"
+        name="birthday"
+        id="birthday"
+        value=""
+      /><br />
+      <br />
+
+      <label for="phone">Phone:</label>
+      <input type="text" value="+91" disabled style="width: 35px" /> <input
+      type="tel" name="phone" id=phone"><br /><br>
+      <label for="address">Address</label><br />
+      <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+      <br />
+      <br />
+      <label for="eamil">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@gmail.com"
+      /><br /><br /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="********"
+      /><br /><br /><br />
+      <label for="retypepassword">Re-type password:</label>
+      <input
+        type="password"
+        name="retypepassword"
+        id="retypepassword"
+        placeholder="********"
+      /><br />
+      <br />
+      <input type="checkbox" name="terms" id="terms" />
+      <label for="terms">Agree to terms and conditions</label><br /><br />
+      <label for="profile">Choose File</label>
+      <input
+        type="file"
+        name="profile"
+        id="profile"
+        accept="image/"
+      /><br /><br />
+      <label for="color">Color</label>
+      <input type="color" name="color" id="color" /><br /><br />
+      <input type="reset" value="reset" />
+      <input type="submit" value="submit" />
+    </fieldset>
+  </body>
+</html>
